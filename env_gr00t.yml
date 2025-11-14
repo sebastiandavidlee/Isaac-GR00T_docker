@@ -1,0 +1,19 @@
+name: gr00t
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.6.0
+  - pytorch-cuda=12.4
+  - pip
+  - ffmpeg
+  - av
+  - cmake
+  - ninja
+  - pip:
+      - "setuptools>=70.0.0"
+      - "flash-attn==2.7.1.post4"
+      - "-e .[base]"
